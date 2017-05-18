@@ -1,0 +1,33 @@
+
+# `ropasaurusrex` from PlaidCTF 2013
+
+`ropasaurusrex` is an excellent challenge from the [2013 PlaidCTF][pctf-2013].
+
+In the original challenge, you are given the [binary][binary] and a
+copy of the [libc][libc] version. The binary is the original one from
+the competition, and the libc is taken from the
+[docker image][docker-container].
+
+The goal is to write a repeatable exploit script to steal the flag
+(located at `/challenge/flag`, although it should just be `flag` in
+the current directory) remotely.
+
+To run the challenge locally on your machine:
+
+	docker run -p 127.0.0.1:31337:31337 adamdoupe/ropasaurusrex
+
+This will download the [docker image][docker-container] and run it
+using docker. The challenge is running under [xinetd][xinetd-man] on
+port 3117 in the container. The `-p` option maps the localhost's port
+31337 to the docker container's port 31337. The 127.0.0.1 part is
+optional (this restricts the port on your actual machine to only
+listen for connections from localhost), however you are running
+intentionally vulnerable software on your machine, so it's not a good
+idea for it to be accessible to other machines. 
+
+
+[pctf-2013]: https://ctftime.org/event/64
+[binary]: ropasaurusrex-85a84f36f81e11f720b1cf5ea0d1fb0d5a603c0d
+[libc]: libc.so.6
+[docker-container]: https://hub.docker.com/r/adamdoupe/ropasaurusrex/
+[xinetd]: https://linux.die.net/man/8/xinetd
