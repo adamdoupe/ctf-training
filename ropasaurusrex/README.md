@@ -30,4 +30,4 @@ idea for it to be accessible to other machines.
 [binary]: ropasaurusrex-85a84f36f81e11f720b1cf5ea0d1fb0d5a603c0d
 [libc]: libc.so.6
 [docker-container]: https://hub.docker.com/r/adamdoupe/ropasaurusrex/
-[xinetd]: https://linux.die.net/man/8/xinetd
+[xinetd-man]: https://linux.die.net/man/8/xinetd

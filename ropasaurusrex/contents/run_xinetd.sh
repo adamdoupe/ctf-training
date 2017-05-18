@@ -11,5 +11,6 @@ function ctrl_c() {
 }
 
 /usr/sbin/xinetd -dontfork -f challenge.conf & export APP_PID=$!
+echo "Running succesfully, go forth and hack!"
 wait $APP_PID
 
