@@ -23,7 +23,11 @@ port 3117 in the container. The `-p` option maps the localhost's port
 optional (this restricts the port on your actual machine to only
 listen for connections from localhost), however you are running
 intentionally vulnerable software on your machine, so it's not a good
-idea for it to be accessible to other machines. 
+idea for it to be accessible to other machines.
+
+You should then be able to access ropasaurusrex like so:
+
+	nc localhost 31337
 
 
 [pctf-2013]: https://ctftime.org/event/64
