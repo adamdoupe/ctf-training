@@ -17,6 +17,7 @@ RUN apt-get -y install python2.7 python2.7-dev python-pip
 RUN pip install --upgrade pip
 RUN apt-get -y upgrade && apt-get -y install libssl-dev
 RUN pip install --upgrade pwntools
+RUN apt-get -y install strace
 RUN apt-get -y upgrade
 
 # Add i386 support
@@ -30,4 +31,4 @@ RUN chmod +x challenge
 
 
 EXPOSE 31337
-CMD ["/challenge/run_xinetd.sh"]
+CMD ["/usr/sbin/xinetd", "-d", "-dontfork", "-f", "challenge.conf"]

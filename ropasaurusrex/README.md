@@ -14,7 +14,7 @@ the current directory) remotely.
 
 To run the challenge locally on your machine:
 
-	docker run -p 127.0.0.1:31337:31337 adamdoupe/ropasaurusrex
+	docker run -p 127.0.0.1:31337:31337  adamdoupe/ropasaurusrex
 
 This will download the [docker image][docker-container] and run it
 using docker. The challenge is running under [xinetd][xinetd-man] on
@@ -29,6 +29,10 @@ You should then be able to access ropasaurusrex like so:
 
 	nc localhost 31337
 
+To jump in and debug the program, you can use the following command
+to get a bash shell
+
+	docker run -p 127.0.0.1:31337:31337 --security-opt seccomp:unconfined adamdoupe/ropasaurusrex bash
 
 [pctf-2013]: https://ctftime.org/event/64
 [binary]: ropasaurusrex-85a84f36f81e11f720b1cf5ea0d1fb0d5a603c0d
