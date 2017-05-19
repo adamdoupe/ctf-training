@@ -14,7 +14,7 @@ the current directory) remotely.
 
 To run the challenge locally on your machine:
 
-	docker run -p 127.0.0.1:31337:31337  adamdoupe/ropasaurusrex
+	docker run -p 127.0.0.1:31337:31337 -it adamdoupe/ropasaurusrex
 
 This will download the [docker image][docker-container] and run it
 using docker. The challenge is running under [xinetd][xinetd-man] on
