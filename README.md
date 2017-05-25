@@ -9,8 +9,9 @@ others can work on them as well.
 ## Challenges
 
 - [ropasaurusrex][ropasaurusrex] -- 5/18/17
-
+- [bigpicture][bigpicture] -- 5/25/17
 
 
 [pwndevils-ctf-time]: https://ctftime.org/team/14321
 [ropasaurusrex]: ropasaurusrex/README.md
+[bigpicture]: bigpicture/README.md

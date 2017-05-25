@@ -1,7 +1,7 @@
 
-# `bigpicture` from PlaidCTF 2016
+# `bigpicture` from PlaidCTF 2017
 
-`bigpicture` is an excellent challenge from the [2016 PlaidCTF][pctf-2016].
+`bigpicture` is an excellent challenge from the [2017 PlaidCTF][pctf-2017].
 
 In the original challenge, you are given the [binary][binary] and a
 copy of the [libc][libc] version. The binary is the original one from
@@ -34,7 +34,7 @@ to get a bash shell
 
 	docker run -p 127.0.0.1:31337:31337 --security-opt seccomp:unconfined -it adamdoupe/bigpicture bash
 
-[pctf-2016]: https://ctftime.org/event/439
+[pctf-2017]: https://ctftime.org/event/439
 [binary]: bigpicture
 [source]: bigpicture.c
 [libc]: libc.so.6
