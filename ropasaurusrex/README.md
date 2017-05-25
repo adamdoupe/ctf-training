@@ -32,7 +32,7 @@ You should then be able to access ropasaurusrex like so:
 To jump in and debug the program, you can use the following command
 to get a bash shell
 
-	docker run -p 127.0.0.1:31337:31337 --security-opt seccomp:unconfined adamdoupe/ropasaurusrex bash
+	docker run -p 127.0.0.1:31337:31337 --security-opt seccomp:unconfined -it adamdoupe/ropasaurusrex bash
 
 [pctf-2013]: https://ctftime.org/event/64
 [binary]: ropasaurusrex-85a84f36f81e11f720b1cf5ea0d1fb0d5a603c0d
