@@ -3,7 +3,7 @@
 
 `bigpicture` is an excellent challenge from the [2017 PlaidCTF][pctf-2017].
 
-In the original challenge, you are given the [binary][binary] and a
+In the original challenge, you are given the [binary][binary], the [source code][source], and a
 copy of the [libc][libc] version. The binary is the original one from
 the competition, and the libc is taken from the
 [docker image][docker-container].
