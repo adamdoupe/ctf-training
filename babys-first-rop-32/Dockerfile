@@ -14,6 +14,7 @@ RUN apt-get -y install gdb
 RUN apt-get -y install g++-multilib
 RUN apt-get -y install liburi-encode-perl
 RUN apt-get -y install python2.7 python2.7-dev python-pip
+RUN apt-get -y install python-capstone
 RUN pip install --upgrade pip
 RUN apt-get -y upgrade && apt-get -y install libssl-dev
 RUN pip install --upgrade pwntools
