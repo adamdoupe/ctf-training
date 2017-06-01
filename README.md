@@ -15,6 +15,7 @@ others can work on them as well.
 
 - [babys-first-rop-32][babys-first-rop-32]
 - [babys-first-rop-64][babys-first-rop-64]
+- [smashme][smashme]
 - [baby-pivot][baby-pivot]
 - ... (More challenges to come)
 - [ropasaurusrex][ropasaurusrex]
@@ -22,6 +23,7 @@ others can work on them as well.
 - [bigpicture][bigpicture]
 
 
+[smashme]: smashme/README.md
 [babys-first-rop-32]: babys-first-rop-32/README.md
 [babys-first-rop-64]: babys-first-rop-64/README.md
 [baby-pivot]: baby-pivot/README.md
