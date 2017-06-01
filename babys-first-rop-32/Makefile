@@ -8,8 +8,9 @@ CHALL_NAME = $(CURRENT_DIR)
 DOCKERHUB_ACCOUNT = adamdoupe
 ALL_CONTENTS_FILES = $(shell find contents -type f)
 
+THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
-.PHONY: run debug-shell build deploy run
+.PHONY: run debug-shell build deploy run compile
 
 all: build
 
@@ -19,7 +20,7 @@ run:
 debug-shell:
 	docker run --rm --security-opt seccomp:unconfined -it $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME) bash
 
-build: contents/challenge Dockerfile $(ALL_CONTENTS_FILES)
+build: 
 	docker build . -t $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME)
 
 deploy: build
@@ -28,7 +29,9 @@ deploy: build
 compile: contents/challenge
 
 contents/challenge: contents/$(CHALL_NAME).c
+	@$(MAKE) -f $(THIS_FILE) build
 	docker run -i --rm -v /build --volumes-from=$(BUILD) $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME) bash -c "gcc $(CC_FLAGS) $(CHALL_NAME).c -o /build/$(CHALL_NAME)"; status=$$?; docker cp $(BUILD):/build/$(CHALL_NAME) .; docker rm -f -v $(BUILD); cp $(CHALL_NAME) contents/challenge; exit $$status
+	@$(MAKE) -f $(THIS_FILE) build
 
 BUILD_GEN = $(shell docker create -v /build $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME))
 BUILD = $(eval BUILD := $(BUILD_GEN))$(BUILD)
