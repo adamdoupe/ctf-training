@@ -18,6 +18,8 @@ RUN pip install --upgrade pip
 RUN apt-get -y upgrade && apt-get -y install libssl-dev
 RUN pip install --upgrade pwntools
 RUN apt-get -y install strace
+RUN apt-get -y install man
+RUN apt-get -y install less
 RUN apt-get -y upgrade
 
 # Add i386 support
