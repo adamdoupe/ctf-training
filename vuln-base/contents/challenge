@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "I am the base image, I'm not vulnerable!"
