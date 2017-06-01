@@ -16,9 +16,13 @@ To run the challenge locally on your machine:
 
 	docker run -p 127.0.0.1:31337:31337 -it adamdoupe/ropasaurusrex
 
+Or, if you'd rather use the makefile (which just runs the above, nothing special):
+
+	make run
+
 This will download the [docker image][docker-container] and run it
 using docker. The challenge is running under [xinetd][xinetd-man] on
-port 3117 in the container. The `-p` option maps the localhost's port
+port 31337 in the container. The `-p` option maps the localhost's port
 31337 to the docker container's port 31337. The 127.0.0.1 part is
 optional (this restricts the port on your actual machine to only
 listen for connections from localhost), however you are running
@@ -32,10 +36,13 @@ You should then be able to access ropasaurusrex like so:
 To jump in and debug the program, you can use the following command
 to get a bash shell
 
-	docker run -p 127.0.0.1:31337:31337 --security-opt seccomp:unconfined -it adamdoupe/ropasaurusrex bash
+	docker run --security-opt seccomp:unconfined -it adamdoupe/ropasaurusrex bash
+
+Or, if you'd rather use the makefile:
+	make debug-shell
 
 [pctf-2013]: https://ctftime.org/event/64
-[binary]: ropasaurusrex-85a84f36f81e11f720b1cf5ea0d1fb0d5a603c0d
+[binary]: ropasaurusrex
 [libc]: libc.so.6
 [docker-container]: https://hub.docker.com/r/adamdoupe/ropasaurusrex/
 [xinetd-man]: https://linux.die.net/man/8/xinetd

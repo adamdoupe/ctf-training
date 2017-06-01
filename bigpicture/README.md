@@ -18,7 +18,7 @@ To run the challenge locally on your machine:
 
 This will download the [docker image][docker-container] and run it
 using docker. The challenge is running under [xinetd][xinetd-man] on
-port 3117 in the container. The `-p` option maps the localhost's port
+port 31337 in the container. The `-p` option maps the localhost's port
 31337 to the docker container's port 31337. The 127.0.0.1 part is
 optional (this restricts the port on your actual machine to only
 listen for connections from localhost), however you are running
@@ -32,7 +32,7 @@ You should then be able to access bigpicture like so:
 To jump in and debug the program, you can use the following command
 to get a bash shell
 
-	docker run -p 127.0.0.1:31337:31337 --security-opt seccomp:unconfined -it adamdoupe/bigpicture bash
+	docker run --security-opt seccomp:unconfined -it adamdoupe/bigpicture bash
 
 [pctf-2017]: https://ctftime.org/event/439
 [binary]: bigpicture

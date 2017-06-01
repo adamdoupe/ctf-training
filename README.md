@@ -15,6 +15,7 @@ others can work on them as well.
 
 - [babys-first-rop-32][babys-first-rop-32]
 - [babys-first-rop-64][babys-first-rop-64]
+- [baby-pivot][baby-pivot]
 - ... (More challenges to come)
 - [ropasaurusrex][ropasaurusrex]
 - ... (Many more to come)
@@ -23,6 +24,7 @@ others can work on them as well.
 
 [babys-first-rop-32]: babys-first-rop-32/README.md
 [babys-first-rop-64]: babys-first-rop-64/README.md
+[baby-pivot]: baby-pivot/README.md
 [pwndevils-ctf-time]: https://ctftime.org/team/14321
 [ropasaurusrex]: ropasaurusrex/README.md
 [bigpicture]: bigpicture/README.md

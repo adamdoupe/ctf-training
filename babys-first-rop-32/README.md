@@ -1,6 +1,6 @@
 # `babys-first-rop-32` 
 
-`babys-first-rop-32` is a beginner challenge that created by
+`babys-first-rop-32` is a beginner challenge that was created by
 [Adam Doupé][adamd-homepage], specifically designed to be an
 introduction level to [Return Oriented Programming][rop].
 
@@ -15,7 +15,7 @@ To run the challenge locally on your machine:
 
 This will download the [docker image][docker-container] and run it
 using docker. The challenge is running under [xinetd][xinetd-man] on
-port 3117 in the container. The `-p` option maps the localhost's port
+port 31337 in the container. The `-p` option maps the localhost's port
 31337 to the docker container's port 31337. The 127.0.0.1 part is
 optional (this restricts the port on your actual machine to only
 listen for connections from localhost), however you are running
