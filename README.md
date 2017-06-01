@@ -8,7 +8,7 @@ others can work on them as well.
 
 ## Challenges in pwndevil order
 
-- [ropasaurusrex][ropasaurusrex] -- 5/18/17 -- [walkthrough][ropasaurusrex-walk]
+- [ropasaurusrex][ropasaurusrex] -- 5/18/17 -- [walkthrough][ropsaurus-walk]
 - [bigpicture][bigpicture] -- 5/25/17
 
 ## Suggested challenge progression
