@@ -17,6 +17,7 @@ others can work on them as well.
 - [babys-first-rop-64][babys-first-rop-64]
 - [smashme][smashme]
 - [baby-pivot][baby-pivot]
+- [format-your-pivot][format-your-pivot]
 - ... (More challenges to come)
 - [ropasaurusrex][ropasaurusrex]
 - ... (Many more to come)
@@ -31,3 +32,4 @@ others can work on them as well.
 [ropasaurusrex]: ropasaurusrex/README.md
 [bigpicture]: bigpicture/README.md
 [ropsaurus-walk]: https://youtu.be/GySsNkUwp84
+[format-your-pivot]: format-your-pivot/README.md
