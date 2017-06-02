@@ -19,7 +19,7 @@ run:
 debug-shell:
 	docker run --rm --security-opt seccomp:unconfined -it $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME) bash
 
-build: compile Dockerfile $(ALL_CONTENTS_FILES)
+build: 
 	docker build . -t $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME)
 
 deploy: build
