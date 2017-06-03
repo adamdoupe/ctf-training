@@ -18,6 +18,7 @@ others can work on them as well.
 - [smashme][smashme]
 - [baby-pivot][baby-pivot]
 - [format-your-pivot][format-your-pivot]
+- [one-byte-to-freedom][one-byte-to-freedom]
 - ... (More challenges to come)
 - [ropasaurusrex][ropasaurusrex]
 - ... (Many more to come)
@@ -33,3 +34,4 @@ others can work on them as well.
 [bigpicture]: bigpicture/README.md
 [ropsaurus-walk]: https://youtu.be/GySsNkUwp84
 [format-your-pivot]: format-your-pivot/README.md
+[one-byte-to-freedom]: one-byte-to-freedom/README.md
