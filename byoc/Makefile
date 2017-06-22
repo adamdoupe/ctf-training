@@ -27,12 +27,16 @@ build:
 deploy: build
 	docker push $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME)
 
-compile: contents/challenge 
+compile: contents/challenge libc.so.6
 
 contents/challenge: contents/$(CHALL_NAME).c
 	@$(MAKE) -f $(THIS_FILE) build
 	docker run -i --rm -v /build --volumes-from=$(BUILD) $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME) bash -c "gcc $(CC_FLAGS) $(CHALL_NAME).c -o /build/$(CHALL_NAME)"; status=$$?; docker cp $(BUILD):/build/$(CHALL_NAME) .; docker rm -f -v $(BUILD); cp $(CHALL_NAME) contents/challenge; exit $$status
 	@$(MAKE) -f $(THIS_FILE) build
+
+libc.so.6:
+	docker run -i --rm $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME) bash -c 'echo "$$(file ./challenge)" | grep "32-bit"; if [ $$? -eq 0 ]; then cat /lib/i386-linux-gnu/libc.so.6; else cat /lib/x86_64-linux-gnu/libc.so.6; fi;' > libc.so.6
+
 
 BUILD_GEN = $(shell docker create -v /build $(DOCKERHUB_ACCOUNT)/$(CHALL_NAME))
 BUILD = $(eval BUILD := $(BUILD_GEN))$(BUILD)

@@ -9,7 +9,8 @@ challenges [baby-pivot][baby-pivot],
 [format-your-pivot][format-your-pivot], and
 [one-byte-to-freedom][one-byte-to-freedom].
 
-You are given the [binary][binary].
+You are given the [binary][binary] and a copy of the [libc][libc]
+version.
 
 The goal is to write a repeatable exploit script to steal the flag
 (located at `/challenge/flag`) remotely.
@@ -46,3 +47,4 @@ to get a bash shell
 [baby-pivot]: ../baby-pivot/README.md
 [format-your-pivot]: ../format-your-pivot/README.md
 [one-byte-to-freedom]: ../one-byte-to-freedom/README.md
+[libc]: libc.so.6
