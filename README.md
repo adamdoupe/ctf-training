@@ -21,6 +21,7 @@ others can work on them as well.
 - [one-byte-to-freedom][one-byte-to-freedom]
 - [byoc][byoc]
 - [ropasaurusrex][ropasaurusrex]
+- [feedme][feedme]
 - ... (Many more to come)
 - [bigpicture][bigpicture]
 
@@ -36,3 +37,4 @@ others can work on them as well.
 [format-your-pivot]: format-your-pivot/README.md
 [one-byte-to-freedom]: one-byte-to-freedom/README.md
 [byoc]: byoc/README.md
+[feedme]: feedme/README.md
