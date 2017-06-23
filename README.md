@@ -22,6 +22,7 @@ others can work on them as well.
 - [byoc][byoc]
 - [ropasaurusrex][ropasaurusrex]
 - [feedme][feedme]
+- [inst_prof][inst_prof]
 - ... (Many more to come)
 - [bigpicture][bigpicture]
 
@@ -38,3 +39,4 @@ others can work on them as well.
 [one-byte-to-freedom]: one-byte-to-freedom/README.md
 [byoc]: byoc/README.md
 [feedme]: feedme/README.md
+[inst_prof]: inst_prof/README.md
