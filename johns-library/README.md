@@ -1,16 +1,16 @@
-# `inst_prof` from 2017 GoogleCTF Quals
+# `johns-library` from poliCTF 2015
 
-`inst_prof` is an excellent challenge from the
-[2017 GoogleCTF Quals][google-quals-2017].
+`johns-library` is an excellent challenge from the
+[2015 poliCTF][polictf-2015].
 
-You are given the [binary][binary].
+You are given the [binary][binary]. The challange was `pwnable` worth 150 points. 
 
 The goal is to write a repeatable exploit script to steal the flag
 (located at `/challenge/flag`) remotely.
 
 To run the challenge locally on your machine:
 
-	docker run -p 127.0.0.1:31337:31337 -it adamdoupe/inst_prof
+	docker run -p 127.0.0.1:31337:31337 -it adamdoupe/johns-library
 
 This will download the [docker image][docker-container] and run it
 using docker. The challenge is running under [xinetd][xinetd-man] on
@@ -21,20 +21,21 @@ listen for connections from localhost), however you are running
 intentionally vulnerable software on your machine, so it's not a good
 idea for it to be accessible to other machines.
 
-You should then be able to access inst_prof like so:
+You should then be able to access johns-library like so:
 
 	nc localhost 31337
 
 To jump in and debug the program, you can use the following command
 to get a bash shell
 
-	docker run --security-opt seccomp:unconfined -it adamdoupe/inst_prof bash
+	docker run --security-opt seccomp:unconfined -it adamdoupe/johns-library bash
 
 [google-quals-2017]: https://ctftime.org/event/455
 [quals-2016]: https://ctftime.org/event/320
 [pctf-2017]: https://ctftime.org/event/439
-[binary]: inst_prof
-[docker-container]: https://hub.docker.com/r/adamdoupe/inst_prof/
+[polictf-2015]: https://ctftime.org/event/207
+[binary]: johns-library
+[docker-container]: https://hub.docker.com/r/adamdoupe/johns-library/
 [xinetd-man]: https://linux.die.net/man/8/xinetd
 [adamd-homepage]: http://adamdoupe.com
 [rop]: https://en.wikipedia.org/wiki/Return-oriented_programming
