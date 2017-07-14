@@ -6,11 +6,6 @@ This will be the repository to hold the challenges that the
 Each challenge will be self-contained in a docker container, so that
 others can work on them as well.
 
-## Challenges in pwndevil order
-
-- [ropasaurusrex][ropasaurusrex] -- 5/18/17 -- [walkthrough][ropsaurus-walk]
-- [bigpicture][bigpicture] -- 5/25/17
-
 ## Suggested challenge progression
 
 - [babys-first-rop-32][babys-first-rop-32]
@@ -20,8 +15,9 @@ others can work on them as well.
 - [format-your-pivot][format-your-pivot]
 - [one-byte-to-freedom][one-byte-to-freedom]
 - [byoc][byoc]
-- [ropasaurusrex][ropasaurusrex]
+- [ropasaurusrex][ropasaurusrex] -- [video walkthrough][ropsaurus-walk]
 - [feedme][feedme]
+- [johns-library][johns-library]
 - [inst_prof][inst_prof]
 - ... (Many more to come)
 - [bigpicture][bigpicture]
@@ -40,3 +36,4 @@ others can work on them as well.
 [byoc]: byoc/README.md
 [feedme]: feedme/README.md
 [inst_prof]: inst_prof/README.md
+[johns-library]: johns-library/README.md
