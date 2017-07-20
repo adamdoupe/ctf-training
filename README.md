@@ -21,6 +21,7 @@ others can work on them as well.
 - [inst_prof][inst_prof]
 - ... (Many more to come)
 - [bigpicture][bigpicture]
+- [poli_wars][poli_wars]
 
 
 [smashme]: smashme/README.md
@@ -37,3 +38,4 @@ others can work on them as well.
 [feedme]: feedme/README.md
 [inst_prof]: inst_prof/README.md
 [johns-library]: johns-library/README.md
+[poli_wars]: poli_wars/README.md
