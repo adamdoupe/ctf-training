@@ -34,8 +34,9 @@ RUN mkdir /challenge && chmod 775 /challenge
 COPY contents/ /challenge
 WORKDIR /challenge
 
-RUN chmod +x challenge
+RUN chmod 755 challenge
 
+RUN chmod 644 flag
 
 EXPOSE 31337
 CMD ["/usr/sbin/xinetd", "-d", "-dontfork", "-f", "challenge.conf"]
