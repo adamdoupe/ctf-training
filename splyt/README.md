@@ -9,7 +9,9 @@ The message text was:
 
 	Bob splitted a secret and gave some pieces of it to some of his friends. We managed to convince Eve and Chris to give us their shares.
 
-Your goal is to find the flag. 
+Your goal is to find the flag.
+
+The flag format is pwn{FLAG}
 
 [tar-archive]: splyt.tar.gz
 [google-quals-2017]: https://ctftime.org/event/455
