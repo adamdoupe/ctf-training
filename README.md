@@ -8,6 +8,9 @@ others can work on them as well.
 
 ## Suggested challenge progression
 
+
+### pwn (binary exploitation)
+
 - [babys-first-rop-32][babys-first-rop-32]
 - [babys-first-rop-64][babys-first-rop-64]
 - [smashme][smashme]
@@ -23,7 +26,13 @@ others can work on them as well.
 - [bigpicture][bigpicture]
 - [poli_wars][poli_wars]
 
+### Crypto
 
+- [twin-primes][twin-primes]
+- [splyt][splyt]
+
+[splyt]: splyt/README.md
+[twin-primes]: twin-primes/README.md
 [smashme]: smashme/README.md
 [babys-first-rop-32]: babys-first-rop-32/README.md
 [babys-first-rop-64]: babys-first-rop-64/README.md
