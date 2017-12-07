@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS `bandb`;
+
+CREATE USER 'ban'@'localhost' IDENTIFIED BY 'ban';
+
+GRANT SELECT , INSERT , UPDATE , DELETE , CREATE , DROP , INDEX , ALTER , CREATE TEMPORARY TABLES , CREATE VIEW , SHOW VIEW , CREATE ROUTINE, ALTER ROUTINE, EXECUTE ON `bandb` . * TO 'ban'@'localhost';
+
+USE `bandb`;
+
+DROP TABLE IF EXISTS `blacklists`;
+CREATE TABLE `blacklists` (
+  `ip` varchar(150) NOT NULL,
+  `payload` varchar(500) NOT NULL,
+  PRIMARY KEY (`ip`)
+);
+
+

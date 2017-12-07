@@ -42,6 +42,11 @@ others can work on them as well.
 - [twin-primes][twin-primes]
 - [splyt][splyt]
 
+### Web
+
+- [sql-so-hard][sql-so-hard]
+
+[sql-so-hard]: sql-so-hard/README.md
 [mrs_hudson]: mrs_hudson/README.md
 [splyt]: splyt/README.md
 [twin-primes]: twin-primes/README.md
