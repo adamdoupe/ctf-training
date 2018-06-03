@@ -6,4 +6,4 @@ RUN chmod +x challenge
 WORKDIR /challenge
 
 EXPOSE 31337
-CMD ["/usr/sbin/xinetd", "-d", "-dontfork", "-f", "challenge.conf"]
+CMD ["/bin/bash", "run_xinetd.sh"]
